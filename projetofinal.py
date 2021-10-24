@@ -84,3 +84,51 @@ def EmOrdemAlfa():
     for i in range(0, TamanhoLista):
         print(f" Nome: {listaAlfa[i][0]} / Email:{listaAlfa[i][1]}")
     print("-------------------------------------")
+#Sistemas de menus
+
+SistemaGeral = True
+while SistemaGeral:
+    print("                Sistema                 \n"
+          " Opções:                                \n"
+          " 1- Cadastrar novos usuários.           \n"
+          " 2- Exibir usuários em ordem cadastrada.\n"
+          " 3- Exibir usuários em ordem alfabética.\n"
+          " 4- Verificar usuário por nome.         \n"
+          " 5- Remover usuário por email.          \n"
+          " 6- Alterar nome do usuário por email.  \n"
+          " 7- Desligar sistema.                   \n")
+
+    escolha = int(input(f"Escolha Uma opção: "))
+
+    if escolha == 1:
+        SistemaCadastro = True
+        while SistemaCadastro == True:
+            NomeNovo = str(input(f"Insira o nome do novo usuário:"))
+            EmailNovo = str(input(f"insira o email do usuário {NomeNovo}: "))
+
+            novoDado = []
+            novoDado.append(NomeNovo)
+            novoDado.append(EmailNovo)
+            lista.append(novoDado)
+
+            print("-----------------------------")
+            print(f"    Dados inseridos:\n"
+                  f" Nome:{NomeNovo} \n"
+                  f" Email:{EmailNovo}")
+            print("-----------------------------")
+
+            repetir = True
+            while repetir == True:
+                continuar = str(
+                    input(f"Deseja cadastrar um novo usuário? S ou N?\n")
+                ).upper()
+                if continuar == 'S':
+                    SistemaCadastro = True
+                    repetir = False
+                    break
+                elif continuar == 'N':
+                    repetir = False
+                    SistemaCadastro = False
+                    break
+                else:
+                    repetir = True
