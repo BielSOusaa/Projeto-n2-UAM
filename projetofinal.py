@@ -132,7 +132,7 @@ while SistemaGeral:
                     break
                 else:
                     repetir = True
-elif escolha == 2:
+    elif escolha == 2:
         exibir()
 
     elif escolha == 3:
