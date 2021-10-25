@@ -1,6 +1,6 @@
 # Projeto-n2-UAM
 
-PROBLEMA PARA SER RESOLVIDO!
+- Situação do Problema
 
 Uma instituição de ensino superior precisa de um sistema para gerenciar o processo de inscrições em
 um evento técnico. O sistema deve permitir a implementação das seguintes histórias de usuário:
