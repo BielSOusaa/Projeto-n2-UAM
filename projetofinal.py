@@ -132,3 +132,31 @@ while SistemaGeral:
                     break
                 else:
                     repetir = True
+elif escolha == 2:
+        exibir()
+
+    elif escolha == 3:
+        EmOrdemAlfa()
+
+    elif escolha == 4:
+        busca = str(input(f"Informe o nome do usuário que deseja encontrar: "))
+        resp = encontrar(busca)
+        if resp == 0:
+            print("---------------------------------")
+            print(f" Usuário {busca}, não encontrado!")
+            print("---------------------------------")
+    elif escolha == 5:
+        busca = str(input(f"Informe o email do usuário que deseja apagar: "))
+        apagar(busca)
+
+    elif escolha == 6:
+        busca = str(input(f"Informe o email do usuário que deseja alterar: "))
+        Alterar(busca)
+
+    elif escolha == 7:
+        SistemaGeral = True
+        break
+
+    else:
+        print("Valor inválido!!!")
+        SistemaCadastro = True
